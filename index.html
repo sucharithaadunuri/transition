@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        margin: 0px;
+    }
+    .main{
+        margin: 100px;
+        margin-left: 200px;
+        transition: transform 3s;
+    }
+button{
+    width: 120px;
+    cursor: pointer;
+    background-color: rgb(151, 151, 222);
+    border: none;
+    margin: 2px;
+    padding: 12px 12px;
+}
+    img{
+        width: 200px; 
+        top: 10px;
+    }
+
+
+.Rotate:hover~.main{
+    transform: rotate(90deg);
+
+}
+.Skew:hover~.main {
+    transform: skew(30deg);
+}
+.Scale:hover~.main {
+    transform: scaleX(1.5);
+}
+.Transition:hover~.main{
+
+    transform: translate(50px, 50px);
+}
+
+h1{
+    background-color: rgb(6, 246, 246);
+    text-align: center;
+}
+</style>   
+</head>
+<body>
+    
+    <h1>Transition example</h1>
+    <div>
+        <button class="Rotate">Rotate</button>
+    <button class="Skew">Skew</button>
+    <button class="Scale">Scale</button>
+    <button class="Transition">Transition</button>
+    
+    <div class="main">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*">
+    </div>
+</div>
+      
+</body>
+</html>
